@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+body::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url(../Project/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-pre.jpg);
+}
+.parent{
+    /* display: flex; */
+}
+form > div{
+    display: flex;
+    justify-content: center;
+    border:  #00ff00;
+    height: 60px;
+}
+form > div input{
+    height: 100%;
+    margin-left: 30px;
+    width: 300px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #fff;
+    border: solid thin #fff;
+}
+form > div input ::placeholder{
+    color: #eee;
+}
+form .parent button{
+    height: 100%;
+    margin-left: 30px;
+    width: 150px;
+    border-radius: 8px;
+}
+/* .left{margin-right: 40px;} */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 5px; */
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border: red;
+    height: 50vh;
+    padding: 10px;
+}
+.right,.left{
+    width: 30%
+}
+.right{
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+.right select,.right button{
+    height: 100%;
+}
+.right select option{
+    color: #000;
+}
+.right button{
+    width: 100px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+.left img{
+    width: 200px;
+    height: 150px;
+}
+.right button:hover{
+    cursor: pointer;
+}
+.right select{
+    width: 160px !important;
+    margin-right: -120px;
+    background-color: transparent;
+    color: #fff;
+    border: solid #fff thin;
+    border-radius: 8px;
+}
+.left{
+    margin-left: 90px;
+    /* position: fixed; */
+    z-index: 1;
+}
+.right,main form, .center{z-index: 1;}
+::placeholder,input{color:#fff; font-size: large;}
+main  h1, main h3{
+color: #fff;
+text-align: center;
+}
+main h1{
+    font-size: 40px
+}
+form .parent > button {
+    background-color: #e50914;
+    color: #fff;
+    border:none;
+    border-radius: 8px;
+}
