@@ -97,9 +97,10 @@ footer{
 .flex{
     display: flex;
     justify-content: space-between;
+    /* gap: 20px !; */
 }
 .flex ul li{
-    margin: 8px;
+    margin: 15px !important;
 }
 select{
     width: 160px !important;
@@ -123,4 +124,13 @@ header{
 header img{
     min-width: 170px;
     max-width: 200px;
+}
+footer ul li {
+    /* border: solid #e50914; */
+    width: 100px !important;
+}
+@media screen and (max-width: 576px){
+    main > div{
+        margin: 50px;
+    }  
 }

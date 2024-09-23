@@ -129,3 +129,12 @@ header img{
     min-width: 170px;
     max-width: 200px;
 }
+footer ul li {
+    /* border: solid #e50914; */
+    width: 100px !important;
+}
+@media screen and (max-width: 576px){
+    main > div{
+        margin: 50px;
+    }  
+}
