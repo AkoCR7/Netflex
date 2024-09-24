@@ -1,0 +1,13 @@
+body{
+    background-color: #000;
+}
+body::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url(EG-ar-20240909-TRIFECTA-perspective_9429eb2b-4155-4c3d-9218-7c04dfc9630e_large.jpg);
+}
