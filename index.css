@@ -45,7 +45,7 @@ form .parent button{
 /* .left{margin-right: 40px;} */
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between !important;
     align-items: center;
     /* padding-top: 5px; */
 }
@@ -56,6 +56,8 @@ main{
     border: red;
     height: 50vh;
     padding: 10px;
+    /* border:#00ff00 ; */
+    width: 100%;
 }
 .right,.left{
     width: 30%
@@ -113,4 +115,34 @@ form .parent > button {
     color: #fff;
     border:none;
     border-radius: 8px;
+}
+@media screen and (max-width: 520px){
+
+    main h1{
+        font-size: 30px
+    }
+    
+    .right button{
+        width: 80px;
+        background-color: #e50914;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+    }
+    form .parent > button {
+        background-color: #e50914;
+    }
+    form > div{
+        height: 40px;
+    }
+    .right select{
+        width: 100px !important;
+        margin-right: 20px;
+    }
+    .left img{
+        width: 130px;
+        height: 120px;
+    }
+    .center{padding: 10px 20px !important;}
+    ::placeholder,input{color:#fff; font-size: medium;}
 }

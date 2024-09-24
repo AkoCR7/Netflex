@@ -92,15 +92,17 @@ footer{
     padding-right: 120px;
     padding-left: 120px;
     margin-top: -15px;
-    height: 38vh;
+    height: auto;
+    /* border: solid; */
 }
 .flex{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap !important;
     /* gap: 20px !; */
 }
 .flex ul li{
-    margin: 15px !important;
+    margin: 20px !important;
 }
 select{
     width: 160px !important;

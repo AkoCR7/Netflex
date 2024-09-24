@@ -102,9 +102,10 @@ footer{
 .flex{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap !important;
 }
 .flex ul li{
-    margin: 8px;
+    margin: 20px;
 }
 select{
     width: 160px !important;
