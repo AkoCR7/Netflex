@@ -4,6 +4,7 @@
 }
 body{
     background-color: #000;
+    overflow-x: hidden;
 }
 body::before{
     content: "";
@@ -26,7 +27,7 @@ form > div{
 }
 form > div input{
     height: 100%;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     width: 300px;
     border-radius: 8px;
     background-color: transparent;
@@ -53,8 +54,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: end;
-    border: red;
-    height: 50vh;
+    /* border: #00ff00 solid; */
+    height: 53vh;
+    padding: 15px;
+    flex-wrap: wrap !important;
     padding: 10px;
     /* border:#00ff00 ; */
     width: 100%;
@@ -108,7 +111,8 @@ color: #fff;
 text-align: center;
 }
 main h1{
-    font-size: 40px
+    font-size: 40px;
+    text-wrap: wrap;
 }
 form .parent > button {
     background-color: #e50914;
@@ -119,9 +123,21 @@ form .parent > button {
 @media screen and (max-width: 520px){
 
     main h1{
-        font-size: 30px
+        font-size: 30px;
+        text-wrap: wrap;
+    }  
+    .center > form div {
+        flex-wrap: wrap ;
+        gap: 10px;
+        height: 40px;
     }
-    
+    form > div input{
+        height: 100% !important;
+    }
+    .center{
+         height: 100%
+    }
+    main{margin-top: 100px;}
     .right button{
         width: 80px;
         background-color: #e50914;
@@ -135,6 +151,7 @@ form .parent > button {
     form > div{
         height: 40px;
     }
+    .right{margin-right: -20px !important;}
     .right select{
         width: 100px !important;
         margin-right: 20px;
@@ -145,4 +162,16 @@ form .parent > button {
     }
     .center{padding: 10px 20px !important;}
     ::placeholder,input{color:#fff; font-size: medium;}
+    .left,.right{
+        margin-left: 10px;    
+    }
+}
+@media screen and (max-width: 1295px){
+    .right select{
+        display: none;
+    }
+
+    @media screen and (max-width: 430px){
+        .right{margin-right: 8px !important;}
+    }
 }
