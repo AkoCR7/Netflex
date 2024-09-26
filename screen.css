@@ -33,8 +33,8 @@ form{translate: 0;}
 header {justify-content: space-between !important;}
 }
 
-@media screen and (min-width: 0) and (max-width: 620px){
-    .right > div i,.right{
+@media screen and (min-width: 0) and (max-width: 1150px){
+    .right > div i,.right > div ,.right > div + div{
         display: none !important;
     }
 }

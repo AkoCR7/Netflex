@@ -66,15 +66,18 @@ header > nav .right{
 header > nav .right i {
     font-size: x-large;
     display: inline-block;
+    color: #000;
 }
 
 header > nav .right i:hover,.img > img{
     cursor: pointer;
 }
-main{background-color: black !important;}
+main,header{background-color: #eee;}
+header{border-bottom: solid thin #000;}
 main .parent video{
     /* width: 200px; */
     height: 200px;
+    border: solid thin #eee;
 }
 main > .parent{
     /* border: solid #00ff00; */
@@ -90,12 +93,12 @@ main > .parent{
 }
 
 h4{
-    color:#FFF; margin-top: 5px;
+    color:#000; margin-top: 5px;
     font-family: 'Inria Sans';
     transition: 0.5s;
 }
 h4:hover{
-    color:goldenrod;
+    text-decoration: underline;
     cursor: pointer;
 }
 video{
@@ -106,7 +109,8 @@ video{
     transition: 1s !important;
 }
 h1{
-    color:gold; margin-top: 25x;
+    color: #000;
+    margin-top: 25x;
     margin-bottom: 25px;
     font-family: 'Merriweather';
 }
@@ -116,7 +120,7 @@ h1{
     /* border: solid thin #fff; */
     margin: 5px;
 }
-#dark-mode{color: #fff;margin-right: -10px;}
+#dark-mode{color: #000;margin-right: -10px;}
 .video-1-1:hover,.video-1-2:hover,.video-1-3:hover,.video-1-4:hover,.video-1-5:hover
 ,.video-2-1:hover,.video-2-2:hover,.video-2-3:hover,.video-2-4:hover,.video-2-5:hover
 ,.video-3-1:hover,.video-3-2:hover,.video-3-3:hover,.video-3-4:hover,.video-3-5:hover
@@ -126,7 +130,7 @@ h1{
     width: 500px !important;
 }
 ::-webkit-scrollbar{
-    width: 5px !important;
+    width: 3px !important;
     height: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -135,7 +139,7 @@ h1{
 }
 ::-webkit-scrollbar:hover{width: 15px;}
 ::-webkit-scrollbar-thumb {
-    background: red; 
+    background: rgb(211, 67, 67); 
     border-radius: 99%;
     transition: 3ms !important;
   }
@@ -150,8 +154,12 @@ form > input {
     /* display: none; */
     opacity: 0.0;
     color:#000;
+    border-radius: 20px;
+    background-color: #eee;
+    border: #000 solid ;
     /* height: 35px; */
     padding: 10px;
 }
-
-
+form > input:hover{
+    border-radius: 0;
+}
